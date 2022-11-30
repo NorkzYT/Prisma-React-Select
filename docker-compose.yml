@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+
+  app-test:
+    image: norkz/app-test:1.0
+    container_name: app-test
+    ports:
+      - 3607:3507 # App
+      - 5559:5555 # Prisma Studio
+    restart: unless-stopped
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    driver: bridge
+    external: true
