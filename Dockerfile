@@ -31,7 +31,7 @@ RUN npx prisma generate --schema ./prisma/first-schema.prisma
 RUN npm run build
 
 # Expose the Port
-EXPOSE 3505
+EXPOSE 3507
 
 # Expose the Prisma Studio Ports
 EXPOSE 5555
