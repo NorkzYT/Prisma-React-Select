@@ -13,8 +13,6 @@ ENV DEBCONF_NOWARNINGS="yes"
 
 
 # ---- Dependencies ----
-# Use changes to package.json to force Docker not to use the cache
-# when we change our application's nodejs dependencies:
 RUN apt-get update
 RUN apt-get install -y openssl
 
