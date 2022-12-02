@@ -1,11 +1,16 @@
-# Docker issue [resolved] - 2022-12-02
+# Prisma App
 
+Ready for development, and production. This is a starter template I made for the Prisma App.
+
+
+------------------
+#### Docker issue [resolved] - 2022-12-02 (aarch64 architecture issue)
 
 This issue has been resolved by updating the `Dockerfile`.
 
 This is a test repository to reproduce a docker issue.
 
-## Steps to reproduce
+##### Steps to reproduce
 
 1. Clone this repository
 2. Run `make docker-build-prismastudio`
