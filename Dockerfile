@@ -62,6 +62,8 @@ EXPOSE 5555
 CMD [ "npm", "start", "--", "--port", "3507" ]
 
 # --------------------------------------------------------------------------------------
+# https://github.com/prisma/prisma/issues/8478#issuecomment-1335444581
+#
 # Best DockerFile Practice:
 # http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/
 # https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
