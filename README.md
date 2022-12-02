@@ -1,4 +1,7 @@
-# Docker issue
+# Docker issue [resolved] - 2022-12-02
+
+
+This issue has been resolved by updating the `Dockerfile`.
 
 This is a test repository to reproduce a docker issue.
 
