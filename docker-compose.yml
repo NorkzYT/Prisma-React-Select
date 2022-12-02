@@ -13,26 +13,6 @@ services:
     networks:
       - proxy
 
-  postgresql-info:
-    image: postgres:15
-    container_name: postgresql-info
-    restart: unless-stopped
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_DB=info
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-    volumes:
-      - /mnt/appdata/brainstormr/postgresql-info/data:/var/lib/postgresql/data # Where postgresql.conf is located.
-    ports:
-      - 3501:5432
-    networks:
-      - proxy
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
 networks:
   proxy:
     driver: bridge

@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:postgres@localhost:5432/railway?schema=public"
+  url      = "postgresql://postgres:postgres@hostname:5432/railway?schema=public"
 }
 
 model Account {
